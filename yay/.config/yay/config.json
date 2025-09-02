@@ -1,0 +1,29 @@
+{
+  "aururl": "https://aur.archlinux.org",
+  "archlinuxrepo": [
+    "core",
+    "extra",
+    "community"
+  ],
+  "buildDir": "$HOME/.cache/yay",
+  "editor": "$EDITOR",
+  "editorflags": "",
+  "makepkgbin": "makepkg",
+  "mflags": "--noconfirm",
+  "pflags": "--noconfirm",
+  "rpc": false,
+  "devel": false,
+  "combinedupgrade": false,
+  "promptcontinuous": false,
+  "answerclean": "",
+  "answerdiff": "All",
+  "answeredit": "All",
+  "removemake": "y",
+  "cleanWorkDir": false,
+  "nodiffmenu": false,
+  "noeditmenu": false,
+  "noupgrademenu": false,
+  "keepBuild": 2,
+  "clearCache": false,
+  "overwritePkg": false
+}

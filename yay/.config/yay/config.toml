@@ -1,0 +1,52 @@
+# Base URL of the AUR RPC/HTTP endpoint
+aururl = "https://aur.archlinux.org"
+
+# Official repos to search before AUR
+archlinuxrepo = ["core", "extra", "community"]
+
+# Directory for cloning and building PKGBUILDs
+buildDir = "$HOME/.cache/yay"
+
+# Editor command for PKGBUILD edits
+editor = "$EDITOR"
+# Additional flags passed to the editor
+editorflags = ""
+
+# Binary used to build packages (default: makepkg)
+makepkgbin = "makepkg"
+
+# Flags passed to makepkg and pacman
+mflags = ["--noconfirm"]
+pflags = ["--noconfirm"]
+
+# Use RPC AUR client instead of HTTP polling (true/false)
+rpc = false
+
+# Global behavior toggles:
+# Include -git/devel packages in upgrade scans
+devel = false
+# Use --combinedupgrade for system updates
+combinedupgrade = false
+# Disable pauses between interactive prompts
+promptcontinuous = false
+
+# Default answers for interactive menus ("All" or "None")
+answerclean = "All"    # auto-clean build dirs after build
+answerdiff = "All"     # show PKGBUILD diffs by default
+answeredit = "All"     # open PKGBUILD in editor by default
+
+# Remove temporary directories
+removemake = false       # remove work dir on successful build
+cleanWorkDir = false     # remove partially failed build dirs
+
+# Suppress various prompt menus
+nodiffmenu = false       # disable diff menu
+noeditmenu = false       # disable edit menu
+noupgrademenu = false    # disable manual upgrade-selection menu
+
+# Keep a limited number of old build directories (0 = keep all)
+keepBuild = 2
+
+# Misc settings
+clearCache = false       # purge yay cache before operations
+overwritePkg = false    # force-overwrite already installed packages
