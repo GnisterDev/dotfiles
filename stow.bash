@@ -1,0 +1,1 @@
+stow -vt ~ .config/
