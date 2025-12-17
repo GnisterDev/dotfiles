@@ -2,8 +2,7 @@
   "aururl": "https://aur.archlinux.org",
   "archlinuxrepo": [
     "core",
-    "extra",
-    "community"
+    "extra"
   ],
   "buildDir": "$HOME/.cache/yay",
   "editor": "$EDITOR",
@@ -11,7 +10,6 @@
   "makepkgbin": "makepkg",
   "mflags": "--noconfirm",
   "pflags": "--noconfirm",
-  "rpc": false,
   "devel": false,
   "combinedupgrade": false,
   "promptcontinuous": false,
