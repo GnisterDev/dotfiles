@@ -1,1 +1,1 @@
-stow -vt ~ .config/
+stow -Rvt ~/.config .config/
