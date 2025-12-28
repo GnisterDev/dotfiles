@@ -26,6 +26,7 @@ gui:
       - "#1f2335" # Slightly darker when view is inactive
     unstagedChangesColor:
       - "#f7768e" # Red for unstaged changes indicator
-    # Enable nerd font icons (requires a nerd font to be installed)
+
+  # Enable nerd font icons (requires a nerd font to be installed)
   nerdFontsVersion: "3"
   showFileIcons: true
