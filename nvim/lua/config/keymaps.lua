@@ -2,8 +2,12 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Visual mode: copy to system clipboard
-vim.keymap.set("v", "<C-c>", '"+y', { noremap = true, silent = true })
+-- Normal and visual mode: copy to system clipboard
+vim.keymap.set({}, "<C-c>", '"+y', { noremap = true, silent = true })
+
+-- Make normal and visual p/P paste from system clipboard (+ register)
+vim.keymap.set({'n','v'}, 'p', '"+p', { noremap = true, silent = true })
+vim.keymap.set({'n','v'}, 'P', '"+P', { noremap = true, silent = true })
 
 -- Move lines up/down in normal mode
 vim.keymap.set("n", "<M-Up>", function()
