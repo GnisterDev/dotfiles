@@ -1,0 +1,31 @@
+gui:
+  theme:
+    activeBorderColor:
+      - "#7aa2f7" # Tokyo Night blue
+      - bold
+    searchingActiveBorderColor:
+      - "#7dcfff" # Cyan when searching
+      - bold
+    inactiveBorderColor:
+      - "#3b4261" # Muted blue-gray
+    optionsTextColor:
+      - "#7dcfff" # Cyan accent for menu options
+    selectedLineBgColor:
+      - "#292e42" # Darker background for selected line
+    cherryPickedCommitBgColor:
+      - "#2d3f76" # Deep blue for cherry-picked commits
+    cherryPickedCommitFgColor:
+      - "#7aa2f7" # Blue text for cherry-picked commits
+    markedBaseCommitBgColor:
+      - "#3d59a1" # Marked base commit background
+    markedBaseCommitFgColor:
+      - "#c0caf5" # Marked base commit foreground
+    defaultFgColor:
+      - "#c0caf5" # Light foreground for default text
+    inactiveViewSelectedLineBgColor:
+      - "#1f2335" # Slightly darker when view is inactive
+    unstagedChangesColor:
+      - "#f7768e" # Red for unstaged changes indicator
+    # Enable nerd font icons (requires a nerd font to be installed)
+  nerdFontsVersion: "3"
+  showFileIcons: true
