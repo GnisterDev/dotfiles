@@ -6,8 +6,8 @@
 vim.keymap.set({}, "<C-c>", '"+y', { noremap = true, silent = true })
 
 -- Make normal and visual p/P paste from system clipboard (+ register)
-vim.keymap.set({'n','v'}, 'p', '"+p', { noremap = true, silent = true })
-vim.keymap.set({'n','v'}, 'P', '"+P', { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "p", '"+p', { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "P", '"+P', { noremap = true, silent = true })
 
 -- Move lines up/down in normal mode
 vim.keymap.set("n", "<M-Up>", function()
@@ -45,3 +45,10 @@ vim.keymap.set("n", "<C-w>", function()
   -- Delete current buffer, keep window open
   vim.api.nvim_buf_delete(buf, { force = false })
 end, { desc = "Close buffer" })
+
+-- Search for file
+vim.keymap.set("n", "<C-p>", "<leader><leader>", { remap = true })
+
+-- Comment/Uncomment line
+vim.keymap.set("n", "<C-'>", "gcc", { remap = true, desc = "Toggle comment" })
+vim.keymap.set("v", "<C-'>", "gc", { remap = true, desc = "Toggle comment" })
