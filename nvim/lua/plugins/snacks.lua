@@ -9,7 +9,7 @@ return {
             -- For width, use layout:
             layout = {
               layout = {
-                width = 25,
+                width = 30,
               },
             },
           },
