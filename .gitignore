@@ -15,4 +15,4 @@ src/
 
 
 # Waybar (generated CSS)
-.config/waybar/colors.css
+waybar/colors.css
