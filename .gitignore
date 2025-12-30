@@ -14,5 +14,6 @@ pkg/
 src/
 
 
-# Waybar (generated CSS)
+nvim/lazy-lock.json
 waybar/colors.css
+
