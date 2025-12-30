@@ -15,18 +15,32 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 -- Set Kitty font size to 5 when entering Neovim
-vim.api.nvim_create_autocmd("UIEnter", {
+vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
-    vim.cmd("kitty @ --to " .. vim.env.KITTY_LISTEN_ON .. " set-font-size 8.0")
+    if vim.env.KITTY_LISTEN_ON then
+      vim.system({
+        "kitty",
+        "@",
+        "--to",
+        vim.env.KITTY_LISTEN_ON,
+        "set-font-size",
+        "8.0",
+      })
+    end
   end,
 })
-
 -- Restore Kitty font size to 10 when leaving Neovim
 vim.api.nvim_create_autocmd("VimLeavePre", {
   callback = function()
-    local kitty_listen = vim.env.KITTY_LISTEN_ON
-    if kitty_listen then
-      vim.cmd("kitty @ --to " .. kitty_listen .. " set-font-size 10.0")
+    if vim.env.KITTY_LISTEN_ON then
+      vim.system({
+        "kitty",
+        "@",
+        "--to",
+        vim.env.KITTY_LISTEN_ON,
+        "set-font-size",
+        "10.0",
+      })
     end
   end,
 })
